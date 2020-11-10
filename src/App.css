@@ -1,5 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .App-logo {
@@ -35,4 +43,38 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.div-iteration-1{
+  min-width: 340px;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  height: 150px;
+  margin: 10px;
+}
+
+.div-iteration-1 div{
+  padding: 10px;
+}
+
+.div-iteration-1 div:last-child{
+  display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
+}
+
+.div-iteration-1 div img{
+  height: 100%;
+  width: 100%;
+}
+
+.greetings{
+  border: 1px solid black;
+  width: 300px;
+  margin: 5px;
 }
